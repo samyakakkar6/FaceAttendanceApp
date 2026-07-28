@@ -1,29 +1,21 @@
-<<<<<<< HEAD
-# FaceAttend — On-Device Facial Attendance App
+---
 
-> **Geofenced · Face-Recognition · Real-Time · Mobile-First**
+## 👨‍💻 Author
 
-A production-ready attendance system built with **Vue 3 + Quasar + Cordova** (frontend) and **Node.js + Express + SQLite** (backend). Employees punch in and out using facial recognition — only when physically inside the office boundary.
+Developed and maintained by **Samyak Kakkar**.
+
+### Project Owner
+**Samyak Kakkar**
+
+If you have any questions, suggestions, or encounter an issue, please open an issue in this repository.
 
 ---
 
-## Live Demo & Download
+## License
 
-| Resource | Link |
-|---|---|
-| **Install as app (PWA)** ⭐ | [Open in Chrome →](https://hritishmahajan.github.io/FaceAttend/) then **⋮ → Install app** |
-| Web App (SPA) | [GitHub Pages →](https://hritishmahajan.github.io/FaceAttend/) |
-| Backend API | [Render →](https://dekho-mai-aagya-api.onrender.com) |
-| API Health | [/health →](https://dekho-mai-aagya-api.onrender.com/health) |
-| APK Download | [Releases →](../../releases/latest) |
+This project is licensed under the MIT License.
 
-> **Recommended: install as a PWA.** Open the link in Chrome on your phone and
-> tap **⋮ → Install app** (or *Add to Home Screen*). You get the app icon, a
-> fullscreen standalone window, native camera/GPS permission prompts, and
-> **automatic updates** — every new deploy reaches installed apps on next open,
-> no reinstall. The APK is available too, but UI updates there require
-> reinstalling a new build.
-
+© 2026 Samyak Kakkar. All rights reserved.
 
 ---
 
