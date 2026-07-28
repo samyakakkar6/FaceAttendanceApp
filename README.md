@@ -1,21 +1,12 @@
+# FaceAttendanceApp
+
 ---
 
 ## 👨‍💻 Author
 
-Developed and maintained by **Samyak Kakkar**.
-
-### Project Owner
-**Samyak Kakkar**
+Developed and maintained by **Hritish Mahajan**.
 
 If you have any questions, suggestions, or encounter an issue, please open an issue in this repository.
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
-© 2026 Samyak Kakkar. All rights reserved.
 
 ---
 
@@ -428,7 +419,6 @@ APK will be at `frontend/src-cordova/platforms/android/app/build/outputs/apk/rel
 
 ## License
 
-MIT © 2025 [Mahajan](https://github.com/hritishmahajan)
-=======
-# FaceAttendanceApp
->>>>>>> f07fdfb19a1c377c1df58534b56ef2ae2e4c9765
+This project is licensed under the MIT License.
+
+© 2026 Hritish Mahajan. All rights reserved.
