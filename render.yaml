@@ -1,0 +1,48 @@
+services:
+  - type: web
+    name: dekho-mai-aagya-api
+    runtime: node
+    rootDir: backend
+    plan: free
+    buildCommand: |
+      npm install
+      curl -sL https://github.com/benbjohnson/litestream/releases/download/v0.3.13/litestream-v0.3.13-linux-amd64.tar.gz | tar -xz litestream
+      chmod +x litestream start-with-litestream.sh
+    startCommand: ./start-with-litestream.sh
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /tmp/attendance.db
+      # S3 persistence (set these in the Render dashboard)
+      - key: S3_BUCKET
+        sync: false
+      - key: AWS_REGION
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: OFFICE_LAT
+        value: "32.060877"
+      - key: OFFICE_LNG
+        value: "75.502502"
+      - key: OFFICE_RADIUS_METERS
+        value: "200"
+      - key: ADMIN_EMAIL
+        value: admin@company.com
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: EMAIL_HOST
+        value: smtp.gmail.com
+      - key: EMAIL_PORT
+        value: "587"
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+*.db
+*.db-shm
+*.db-wal
+uploads/*
+!uploads/.gitkeep
+.DS_Store
+.quasar/
+src-cordova/platforms/
+src-cordova/plugins/
+coverage/
+
+# Backend uploads (runtime-generated)
+backend/uploads/*
+!backend/uploads/.gitkeep

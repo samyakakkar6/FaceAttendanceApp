@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mahajan.attendance" version="1.0.0"
+  xmlns="http://www.w3.org/ns/widgets"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+  <name>FaceAttend</name>
+  <description>On-Device Facial Attendance App with Geofencing</description>
+  <author email="hritishmahajanog@gmail.com" href="">Mahajan</author>
+
+  <content src="index.html" />
+  <access origin="*" />
+
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  <allow-intent href="tel:*" />
+  <allow-intent href="sms:*" />
+  <allow-intent href="mailto:*" />
+
+  <preference name="loglevel" value="DEBUG" />
+  <preference name="AllowInlineMediaPlayback" value="true" />
+  <preference name="MediaPlaybackRequiresUserAction" value="false" />
+  <preference name="AllowBackForwardNavigationGestures" value="true" />
+
+  <!-- Android -->
+  <platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.CAMERA" />
+      <uses-feature android:name="android.hardware.camera" android:required="false" />
+    </config-file>
+    <icon src="resources/icon.png" />
+    <icon density="ldpi" src="resources/icon.png" />
+    <icon density="mdpi" src="resources/icon.png" />
+    <icon density="hdpi" src="resources/icon.png" />
+    <icon density="xhdpi" src="resources/icon.png" />
+    <icon density="xxhdpi" src="resources/icon.png" />
+    <icon density="xxxhdpi" src="resources/icon.png" />
+    <allow-intent href="market:*" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+  </platform>
+
+  <!-- iOS -->
+  <platform name="ios">
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+      <string>FaceAttend needs camera access for facial recognition attendance.</string>
+    </edit-config>
+    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+      <string>FaceAttend needs location access for geofenced attendance.</string>
+    </edit-config>
+  </platform>
+
+  <!-- Plugins -->
+  <plugin name="cordova-plugin-camera" spec="^7.0.0" />
+  <plugin name="cordova-plugin-geolocation" spec="^5.0.0" />
+  <plugin name="cordova-plugin-network-information" spec="^3.0.0" />
+  <plugin name="cordova-plugin-splashscreen" spec="^6.0.0" />
+  <plugin name="cordova-plugin-whitelist" spec="^1.3.5" />
+  <plugin name="cordova-plugin-android-permissions" spec="^1.1.5" />
+</widget>

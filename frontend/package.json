@@ -1,0 +1,38 @@
+{
+  "name": "face-attendance-app",
+  "version": "1.0.0",
+  "description": "On-Device Facial Attendance App with Geofencing",
+  "productName": "Dekho Mai Aagya!",
+  "author": "Mahajan",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "build:android": "quasar build -m cordova -T android",
+    "lint": "eslint --ext .js,.ts,.vue ./src"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.11",
+    "@vladmandic/face-api": "^1.7.15",
+    "axios": "^1.7.2",
+    "fs": "^0.0.1-security",
+    "pinia": "^2.1.7",
+    "quasar": "^2.16.4",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@quasar/app-webpack": "^4.4.5",
+    "@quasar/babel-preset-app": "^2.0.4",
+    "@types/node": "^20.14.8",
+    "autoprefixer": "^10.5.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "sass": "^1.101.0"
+  },
+  "engines": {
+    "node": "^20 || ^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

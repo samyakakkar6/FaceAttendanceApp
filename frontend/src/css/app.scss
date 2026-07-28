@@ -1,0 +1,85 @@
+// App-wide SCSS · Indigo Block-Print
+
+body { font-family: $font-body; }
+
+.kolam-light {
+  background-color: $page-bg;
+  background-image: radial-gradient(rgba(30,42,110,.05) 1px, transparent 1.5px);
+  background-size: 15px 15px;
+}
+.kolam-dark {
+  background-color: $dark;
+  background-image: radial-gradient(rgba(244,163,0,.06) 1px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.brandname { font-family: $font-brand; line-height: 1; }
+.disp      { font-family: $font-display; font-weight: 400; }
+.dev       { font-family: $font-display; color: $accent; }
+.mono      { font-family: $font-mono; }
+
+.dmag-card {
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: $radius-card;
+  box-shadow: 0 12px 24px -18px rgba(30,42,110,.5);
+}
+.lab {
+  font-size: 12.5px; font-weight: 700; color: $ink-muted;
+  text-transform: uppercase; letter-spacing: .05em; margin-bottom: 7px;
+}
+.trust-line {
+  display: flex; align-items: center; justify-content: center; gap: 7px;
+  font-size: 12.5px; color: $ink-muted; font-weight: 600;
+}
+
+.face-scan-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid $primary;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+
+  &.scanning {
+    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  &.success {
+    border-color: $positive;
+  }
+
+  &.error {
+    border-color: $negative;
+  }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 0 0 rgba($primary, 0.4); }
+  70%  { box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 0 20px rgba($primary, 0); }
+  100% { box-shadow: 0 0 0 9999px rgba(0,0,0,0.6), 0 0 0 0 rgba($primary, 0); }
+}
+
+.attendance-card {
+  border-left: 4px solid $primary;
+  &.punched-out { border-left-color: $positive; }
+}
+
+.geofence-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  &.inside  { background: $positive; animation: blink 2s infinite; }
+  &.outside { background: $negative; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
