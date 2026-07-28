@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FaceAttend — On-Device Facial Attendance App
 
 > **Geofenced · Face-Recognition · Real-Time · Mobile-First**
@@ -436,3 +437,6 @@ APK will be at `frontend/src-cordova/platforms/android/app/build/outputs/apk/rel
 ## License
 
 MIT © 2025 [Mahajan](https://github.com/hritishmahajan)
+=======
+# FaceAttendanceApp
+>>>>>>> f07fdfb19a1c377c1df58534b56ef2ae2e4c9765
