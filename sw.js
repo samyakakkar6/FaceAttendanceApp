@@ -1,0 +1,1 @@
+const CACHE="dmag-v1";self.addEventListener("install",()=>self.skipWaiting()),self.addEventListener("activate",e=>e.waitUntil(self.clients.claim())),self.addEventListener("fetch",e=>{"GET"===e.request.method&&e.respondWith(fetch(e.request).then(t=>{const s=t.clone();return caches.open(CACHE).then(t=>t.put(e.request,s)).catch(()=>{}),t}).catch(()=>caches.match(e.request)))});
