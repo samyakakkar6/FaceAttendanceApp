@@ -4,7 +4,7 @@
 
 ## 👨‍💻 Author
 
-Developed and maintained by **Hritish Mahajan**.
+Developed and maintained by **Samya Kakkar**.
 
 If you have any questions, suggestions, or encounter an issue, please open an issue in this repository.
 
@@ -421,4 +421,4 @@ APK will be at `frontend/src-cordova/platforms/android/app/build/outputs/apk/rel
 
 This project is licensed under the MIT License.
 
-© 2026 Hritish Mahajan. All rights reserved.
+© 2026 Samya Kakkar. All rights reserved.
